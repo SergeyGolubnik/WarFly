@@ -12,6 +12,8 @@
 		87D50E6B25E99AFF00375389 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E6A25E99AFF00375389 /* GameViewController.swift */; };
 		87D50E6E25E99AFF00375389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D50E6C25E99AFF00375389 /* Main.storyboard */; };
 		87D50E7025E99B0200375389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D50E6F25E99B0200375389 /* Assets.xcassets */; };
+		87D50E7A25EA493000375389 /* Backgraund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E7925EA493000375389 /* Backgraund.swift */; };
+		87D50E8525EA55FA00375389 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8425EA55FA00375389 /* Island.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		87D50E6D25E99AFF00375389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D50E6F25E99B0200375389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D50E7125E99B0200375389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D50E7925EA493000375389 /* Backgraund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backgraund.swift; sourceTree = "<group>"; };
+		87D50E8425EA55FA00375389 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				87D50E6225E99AFF00375389 /* AppDelegate.swift */,
 				87D50E6825E99AFF00375389 /* GameScene.swift */,
+				87D50E7925EA493000375389 /* Backgraund.swift */,
+				87D50E8425EA55FA00375389 /* Island.swift */,
 				87D50E6A25E99AFF00375389 /* GameViewController.swift */,
 				87D50E6C25E99AFF00375389 /* Main.storyboard */,
 				87D50E6F25E99B0200375389 /* Assets.xcassets */,
@@ -134,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D50E6925E99AFF00375389 /* GameScene.swift in Sources */,
+				87D50E7A25EA493000375389 /* Backgraund.swift in Sources */,
 				87D50E6B25E99AFF00375389 /* GameViewController.swift in Sources */,
+				87D50E8525EA55FA00375389 /* Island.swift in Sources */,
 				87D50E6325E99AFF00375389 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
