@@ -8,22 +8,22 @@
 import SpriteKit
 import GameplayKit
 
-class Island: SKSpriteNode {
+final class Island: SKSpriteNode, GameBackgraundSpritabl {
     
-    
-    static func populateIsland(at point: CGPoint) -> Island {
+    static func populate(at point: CGPoint) -> Island {
         
-        let islandImageName = configureIslandName()
-        let island = Island(imageNamed: islandImageName)
+        let imageName = configureName()
+        let island = Island(imageNamed: imageName)
         island.setScale(randomScaleFactor)
         island.position = point
         island.zPosition = 1
         island.run(rotateForRandomAngle())
+        island.run(move(from: point))
         
         return island
     }
     
-    static func configureIslandName() -> String {
+    private static func configureName() -> String {
         let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 4)
         let randomNumber = distribution.nextInt()
         let imageName = "is" + "\(randomNumber)"
@@ -31,18 +31,28 @@ class Island: SKSpriteNode {
         return imageName
     }
     
-    static var randomScaleFactor: CGFloat {
+    private static var randomScaleFactor: CGFloat {
         let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 10)
         let randomNumber = CGFloat(distribution.nextInt()) / 10
         
         return randomNumber
     }
     
-    static func rotateForRandomAngle() -> SKAction {
+    private static func rotateForRandomAngle() -> SKAction {
         let distribution = GKRandomDistribution(lowestValue: 1, highestValue: 10)
         let randomNumber = CGFloat(distribution.nextInt()) / 10
         
         return SKAction.rotate(byAngle: randomNumber * CGFloat(Double.pi / 180), duration: 0)
+    }
+    
+    private static func move(from point: CGPoint) -> SKAction {
+        
+        let muviPoint = CGPoint(x: point.x, y: -200)
+        let muviDistanse = point.y + 200
+        let muviSpeed: CGFloat = 10.0
+        let duration = muviDistanse / muviSpeed
+        
+        return SKAction.move(to: muviPoint, duration: TimeInterval(duration))
     }
 
 }
