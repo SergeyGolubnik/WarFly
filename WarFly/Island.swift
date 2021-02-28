@@ -10,7 +10,19 @@ import GameplayKit
 
 final class Island: SKSpriteNode, GameBackgraundSpritabl {
     
-    static func populate(at point: CGPoint) -> Island {
+    static func populate() -> Island {
+        
+        let imageName = configureName()
+        let island = Island(imageNamed: imageName)
+        island.setScale(randomScaleFactor)
+        island.position = randomPoint()
+        island.zPosition = 1
+        island.run(rotateForRandomAngle())
+        island.run(move(from: island.position))
+        
+        return island
+    }
+    static func populatet(at point: CGPoint) -> Island {
         
         let imageName = configureName()
         let island = Island(imageNamed: imageName)
@@ -18,7 +30,7 @@ final class Island: SKSpriteNode, GameBackgraundSpritabl {
         island.position = point
         island.zPosition = 1
         island.run(rotateForRandomAngle())
-        island.run(move(from: point))
+        island.run(move(from: island.position))
         
         return island
     }
@@ -49,7 +61,7 @@ final class Island: SKSpriteNode, GameBackgraundSpritabl {
         
         let muviPoint = CGPoint(x: point.x, y: -200)
         let muviDistanse = point.y + 200
-        let muviSpeed: CGFloat = 10.0
+        let muviSpeed: CGFloat = 100.0
         let duration = muviDistanse / muviSpeed
         
         return SKAction.move(to: muviPoint, duration: TimeInterval(duration))

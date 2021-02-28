@@ -15,6 +15,8 @@
 		87D50E7A25EA493000375389 /* Backgraund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E7925EA493000375389 /* Backgraund.swift */; };
 		87D50E8525EA55FA00375389 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8425EA55FA00375389 /* Island.swift */; };
 		87D50E8825EA63E600375389 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8725EA63E600375389 /* Cloud.swift */; };
+		87D50E8F25EBB05800375389 /* PlayrPlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8E25EBB05800375389 /* PlayrPlain.swift */; };
+		87D50E9325EBB11B00375389 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 87D50E9225EBB11B00375389 /* PlayerPlane.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		87D50E7925EA493000375389 /* Backgraund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backgraund.swift; sourceTree = "<group>"; };
 		87D50E8425EA55FA00375389 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		87D50E8725EA63E600375389 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		87D50E8E25EBB05800375389 /* PlayrPlain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayrPlain.swift; sourceTree = "<group>"; };
+		87D50E9225EBB11B00375389 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,13 @@
 			children = (
 				87D50E6225E99AFF00375389 /* AppDelegate.swift */,
 				87D50E6825E99AFF00375389 /* GameScene.swift */,
+				87D50E8E25EBB05800375389 /* PlayrPlain.swift */,
 				87D50E8725EA63E600375389 /* Cloud.swift */,
 				87D50E8425EA55FA00375389 /* Island.swift */,
 				87D50E7925EA493000375389 /* Backgraund.swift */,
 				87D50E6A25E99AFF00375389 /* GameViewController.swift */,
 				87D50E6C25E99AFF00375389 /* Main.storyboard */,
+				87D50E9225EBB11B00375389 /* PlayerPlane.atlas */,
 				87D50E6F25E99B0200375389 /* Assets.xcassets */,
 				87D50E7125E99B0200375389 /* Info.plist */,
 			);
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D50E9325EBB11B00375389 /* PlayerPlane.atlas in Resources */,
 				87D50E6E25E99AFF00375389 /* Main.storyboard in Resources */,
 				87D50E7025E99B0200375389 /* Assets.xcassets in Resources */,
 			);
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D50E8F25EBB05800375389 /* PlayrPlain.swift in Sources */,
 				87D50E6925E99AFF00375389 /* GameScene.swift in Sources */,
 				87D50E7A25EA493000375389 /* Backgraund.swift in Sources */,
 				87D50E6B25E99AFF00375389 /* GameViewController.swift in Sources */,
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYRYJ88DZU;
 				INFOPLIST_FILE = WarFly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYRYJ88DZU;
 				INFOPLIST_FILE = WarFly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

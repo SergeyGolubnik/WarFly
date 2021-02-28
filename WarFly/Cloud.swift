@@ -9,19 +9,31 @@ import SpriteKit
 import GameplayKit
 
 protocol GameBackgraundSpritabl {
-    static func populate(at point: CGPoint) -> Self
+    static func populate() -> Self
+    static func randomPoint() -> CGPoint
 }
+
+extension GameBackgraundSpritabl {
+    static func randomPoint() -> CGPoint {
+        let screen = UIScreen.main.bounds
+        let distribution = GKRandomDistribution(lowestValue: Int(screen.size.height) + 100, highestValue: Int(screen.size.width) + 200)
+        let y = CGFloat(distribution.nextInt())
+        let x = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: Int(screen.size.width)))
+        return CGPoint(x: x, y: y)
+    }
+}
+
 
 final class Cloud: SKSpriteNode, GameBackgraundSpritabl {
 
-    static func populate(at point: CGPoint) -> Cloud {
+    static func populate() -> Cloud {
         
         let imageName = configureName()
         let cloud = Cloud(imageNamed: imageName)
         cloud.setScale(randomScaleFactor)
-        cloud.position = point
+        cloud.position = randomPoint()
         cloud.zPosition = 10
-        cloud.run(move(from: point))
+        cloud.run(move(from: cloud.position))
         
         return cloud
     }
@@ -45,7 +57,7 @@ final class Cloud: SKSpriteNode, GameBackgraundSpritabl {
         
         let muviPoint = CGPoint(x: point.x, y: -200)
         let muviDistanse = point.y + 200
-        let muviSpeed: CGFloat = 15.0
+        let muviSpeed: CGFloat = 150.0
         let duration = muviDistanse / muviSpeed
         
         return SKAction.move(to: muviPoint, duration: TimeInterval(duration))
