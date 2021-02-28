@@ -17,6 +17,7 @@
 		87D50E8825EA63E600375389 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8725EA63E600375389 /* Cloud.swift */; };
 		87D50E8F25EBB05800375389 /* PlayrPlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E8E25EBB05800375389 /* PlayrPlain.swift */; };
 		87D50E9325EBB11B00375389 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 87D50E9225EBB11B00375389 /* PlayerPlane.atlas */; };
+		87D50E9A25EC248A00375389 /* ProtokolGameExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D50E9925EC248A00375389 /* ProtokolGameExtansion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		87D50E8725EA63E600375389 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		87D50E8E25EBB05800375389 /* PlayrPlain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayrPlain.swift; sourceTree = "<group>"; };
 		87D50E9225EBB11B00375389 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		87D50E9925EC248A00375389 /* ProtokolGameExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtokolGameExtansion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				87D50E8E25EBB05800375389 /* PlayrPlain.swift */,
 				87D50E8725EA63E600375389 /* Cloud.swift */,
 				87D50E8425EA55FA00375389 /* Island.swift */,
+				87D50E9925EC248A00375389 /* ProtokolGameExtansion.swift */,
 				87D50E7925EA493000375389 /* Backgraund.swift */,
 				87D50E6A25E99AFF00375389 /* GameViewController.swift */,
 				87D50E6C25E99AFF00375389 /* Main.storyboard */,
@@ -152,6 +155,7 @@
 				87D50E8F25EBB05800375389 /* PlayrPlain.swift in Sources */,
 				87D50E6925E99AFF00375389 /* GameScene.swift in Sources */,
 				87D50E7A25EA493000375389 /* Backgraund.swift in Sources */,
+				87D50E9A25EC248A00375389 /* ProtokolGameExtansion.swift in Sources */,
 				87D50E6B25E99AFF00375389 /* GameViewController.swift in Sources */,
 				87D50E8825EA63E600375389 /* Cloud.swift in Sources */,
 				87D50E8525EA55FA00375389 /* Island.swift in Sources */,

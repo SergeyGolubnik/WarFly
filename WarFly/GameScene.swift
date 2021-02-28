@@ -18,12 +18,37 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         configaStartSibc()
-        }
+        spawnCload()
+        spawnIsland()
+    }
      
+    private func spawnCload() {
+        let spawnCloadWait = SKAction.wait(forDuration: 1)
+        let spawnCloadActiot = SKAction.run {
+            let cload = Cloud.populate()
+            self.addChild(cload)
+        }
+        
+        let spawnCloadSequens = SKAction.sequence([spawnCloadWait, spawnCloadActiot])
+        let spawnCloadForevo = SKAction.repeatForever(spawnCloadSequens)
+        run(spawnCloadForevo)
+    }
     
+    private func spawnIsland() {
+        let spawnIslandWait = SKAction.wait(forDuration: 2)
+        let spawnIslandActiot = SKAction.run {
+            let island = Island.populate()
+            self.addChild(island)
+        }
+        
+        let spawnIslandSequens = SKAction.sequence([spawnIslandWait, spawnIslandActiot])
+        let spawnIslandForevo = SKAction.repeatForever(spawnIslandSequens)
+        run(spawnIslandForevo)
+    }
     
     
     private func configaStartSibc() {
+        
         let scrinCebterPoint = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         let backgraund = Backgraund.populatBackgraund(at: scrinCebterPoint)
         backgraund.size = self.size
