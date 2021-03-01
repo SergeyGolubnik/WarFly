@@ -5,18 +5,19 @@
 //  Created by СОВА on 27.02.2021.
 //
 
+
 import SpriteKit
 
-class Backgraund: SKSpriteNode {
-    
-    
-    static func populatBackgraund(at point: CGPoint) -> Backgraund {
+class Background: SKSpriteNode {
+
+    static func populateBackground(at point: CGPoint) -> Background {
         
-        let beckgraund = Backgraund(imageNamed: "background" )
-        beckgraund.position = point
-        beckgraund.zPosition = 0
+        let background = Background(imageNamed: "background")
+        background.position = point
+        background.zPosition = 0
         
-        return beckgraund
+        return background
+    
     }
-    
 }
+
